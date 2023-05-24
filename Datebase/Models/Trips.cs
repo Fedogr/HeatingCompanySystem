@@ -16,16 +16,16 @@ namespace HeatingCompanySystem.Datebase.Models
         public Guid EmployeeId { get; set; }
         public Employee Employee { get; set; }
 
-        [Column("last_name", Order = 2)]
-        public string LastName { get; set; }
+        //[Column("last_name", Order = 2)]
+        //public string LastName { get; set; }
 
-        [Column("visit_date", Order = 3)]
+        [Column("visit_date", Order = 2)]
         public string VisitDate { get; set; }
 
-        [Column("repair_type", Order = 4)]
+        [Column("repair_type", Order = 3)]
         public string RepairType { get; set; }
 
-        [Column("result", Order = 5)]
+        [Column("result", Order = 4)]
         public Boolean Result { get; set; }
     }
 }

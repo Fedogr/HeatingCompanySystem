@@ -31,7 +31,7 @@ public class MyContextDb : DbContext
     public MyContextDb(DbContextOptions<MyContextDb> options) : base(options)
     {
         //Проверка существования БД
-        //Database.EnsureDeleted();
+        Database.EnsureDeleted();
         Database.EnsureCreated();
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)

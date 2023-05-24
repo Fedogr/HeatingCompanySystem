@@ -276,432 +276,432 @@ public class DatabaseInitializer
             _context.SaveChanges();
 
         }
-        //if (!_context.Techbezs.Any())
-        //{
-        //    var ps = _context.Techbezs.ToList();
-        //    var items = new Techbez[]
-        //    {
-        //            new Techbez
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Александрова").Id,
-        //                CheckDate = "26.03.2023",
-        //                CheckResult = "Сдал",
-        //                NextCheckDate = "26.03.2024",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Techbez
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Смирнов").Id,
-        //                CheckDate = "26.03.2023",
-        //                CheckResult = "Сдал",
-        //                NextCheckDate = "26.03.2024",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Techbez
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Петрова").Id,
-        //                CheckDate = "26.03.2023",
-        //                CheckResult = "Сдал",
-        //                NextCheckDate = "26.03.2024",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Techbez
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Козлов").Id,
-        //                CheckDate = "20.03.2023",
-        //                CheckResult = "Сдал",
-        //                NextCheckDate = "20.03.2024",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Techbez
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Сергеев").Id,
-        //                CheckDate = "20.03.2023",
-        //                CheckResult = "Сдал",
-        //                NextCheckDate = "20.03.2024",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Techbez
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Михайлова").Id,
-        //                CheckDate = "20.03.2023",
-        //                CheckResult = "Сдал",
-        //                NextCheckDate = "20.03.2024",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Techbez
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Николаев").Id,
-        //                CheckDate = "03.03.2023",
-        //                CheckResult = "Сдал",
-        //                NextCheckDate = "03.03.2024",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Techbez
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Лебедева").Id,
-        //                CheckDate = "03.03.2023",
-        //                CheckResult = "Сдал",
-        //                NextCheckDate = "03.03.2024",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Techbez
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Григорьев").Id,
-        //                CheckDate = "03.03.2023",
-        //                CheckResult = "Сдал",
-        //                NextCheckDate = "03.03.2024",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //    };
-        //    _context.Techbezs.AddRange(items);
-        //    _context.SaveChanges();
+        if (!_context.Techbezs.Any())
+        {
+            var emps = _context.Employees.ToList();
+            var items = new Techbez[]
+              {
+                    new Techbez
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Александрова").Id,
+                        CheckDate = "26.03.2023",
+                        CheckResult = "Сдал",
+                        NextCheckDate = "26.03.2024",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Techbez
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Смирнов").Id,
+                        CheckDate = "26.03.2023",
+                        CheckResult = "Сдал",
+                        NextCheckDate = "26.03.2024",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Techbez
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Петрова").Id,
+                        CheckDate = "26.03.2023",
+                        CheckResult = "Сдал",
+                        NextCheckDate = "26.03.2024",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Techbez
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Козлов").Id,
+                        CheckDate = "20.03.2023",
+                        CheckResult = "Сдал",
+                        NextCheckDate = "20.03.2024",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Techbez
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Сергеев").Id,
+                        CheckDate = "20.03.2023",
+                        CheckResult = "Сдал",
+                        NextCheckDate = "20.03.2024",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Techbez
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Михайлова").Id,
+                        CheckDate = "20.03.2023",
+                        CheckResult = "Сдал",
+                        NextCheckDate = "20.03.2024",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Techbez
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Николаев").Id,
+                        CheckDate = "03.03.2023",
+                        CheckResult = "Сдал",
+                        NextCheckDate = "03.03.2024",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Techbez
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Лебедева").Id,
+                        CheckDate = "03.03.2023",
+                        CheckResult = "Сдал",
+                        NextCheckDate = "03.03.2024",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Techbez
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Григорьев").Id,
+                        CheckDate = "03.03.2023",
+                        CheckResult = "Сдал",
+                        NextCheckDate = "03.03.2024",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+              };
+            _context.Techbezs.AddRange(items);
+            _context.SaveChanges();
 
-        //}
-        //if (!_context.Violationss.Any())
-        //{
-        //    var ps = _context.Violationss.ToList();
-        //    var items = new Violations[]
-        //    {
-        //            new Violations
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Александрова").Id,
-        //                VioDate = "10.06.2022",
-        //                VioReason = "Уважительная причина",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Violations
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Сергеев").Id,
-        //                VioDate = "10.06.2022",
-        //                VioReason = "Уважительная причина",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Violations
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Михайлова").Id,
-        //                VioDate = "10.01.2023",
-        //                VioReason = "Неуважительная причина",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Violations
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Михайлова").Id,
-        //                VioDate = "15.01.2023",
-        //                VioReason = "Уважительная причина",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Violations
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Михайлова").Id,
-        //                VioDate = "20.01.2023",
-        //                VioReason = "Уважительная причина",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Violations
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Михайлова").Id,
-        //                VioDate = "25.01.2023",
-        //                VioReason = "Неуважительная причина",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Violations
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Николаев").Id,
-        //                VioDate = "10.01.2023",
-        //                VioReason = "Уважительная причина",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Violations
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Николаев").Id,
-        //                VioDate = "20.01.2023",
-        //                VioReason = "Неуважительная причина",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Violations
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Лебедева").Id,
-        //                VioDate = "10.02.2022",
-        //                VioReason = "Уважительная причина",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Violations
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Лебедева").Id,
-        //                VioDate = "15.02.2022",
-        //                VioReason = "Уважительная причина",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Violations
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Лебедева").Id,
-        //                VioDate = "20.02.2022",
-        //                VioReason = "Неуважительная причина",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Violations
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Григорьев").Id,
-        //                VioDate = "17.03.2023",
-        //                VioReason = "Уважительная причина",
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //    };
-        //    _context.Violationss.AddRange(items);
-        //    _context.SaveChanges();
-        //}
-        //if (!_context.TimeTrackings.Any())
-        //{
-        //    var ps = _context.TimeTrackings.ToList();
-        //    var items = new TimeTracking[]
-        //    {
-        //            new TimeTracking
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Александрова").Id,
-        //                TableNum = 1,
-        //                EntryDate = "01.05.2022",
-        //                CurrentDate = DateTime.Now,
-        //                HoursWorked = 800,
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new TimeTracking
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Смирнов").Id,
-        //                TableNum = 2,
-        //                EntryDate = "01.03.2022",
-        //                CurrentDate = DateTime.Now,
-        //                HoursWorked = 1000,
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
+        }
+        if (!_context.Violationss.Any())
+        {
+            var emps = _context.Employees.ToList();
+            var items = new Violations[]
+            {
+                    new Violations
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Александрова").Id,
+                        VioDate = "10.06.2022",
+                        VioReason = "Уважительная причина",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Violations
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Сергеев").Id,
+                        VioDate = "10.06.2022",
+                        VioReason = "Уважительная причина",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Violations
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Михайлова").Id,
+                        VioDate = "10.01.2023",
+                        VioReason = "Неуважительная причина",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Violations
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Михайлова").Id,
+                        VioDate = "15.01.2023",
+                        VioReason = "Уважительная причина",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Violations
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Михайлова").Id,
+                        VioDate = "20.01.2023",
+                        VioReason = "Уважительная причина",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Violations
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Михайлова").Id,
+                        VioDate = "25.01.2023",
+                        VioReason = "Неуважительная причина",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Violations
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Николаев").Id,
+                        VioDate = "10.01.2023",
+                        VioReason = "Уважительная причина",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Violations
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Николаев").Id,
+                        VioDate = "20.01.2023",
+                        VioReason = "Неуважительная причина",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Violations
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Лебедева").Id,
+                        VioDate = "10.02.2022",
+                        VioReason = "Уважительная причина",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Violations
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Лебедева").Id,
+                        VioDate = "15.02.2022",
+                        VioReason = "Уважительная причина",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Violations
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Лебедева").Id,
+                        VioDate = "20.02.2022",
+                        VioReason = "Неуважительная причина",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Violations
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Григорьев").Id,
+                        VioDate = "17.03.2023",
+                        VioReason = "Уважительная причина",
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+            };
+            _context.Violationss.AddRange(items);
+            _context.SaveChanges();
+        }
+        if (!_context.TimeTrackings.Any())
+        {
+            var emps = _context.Employees.ToList();
+            var items = new TimeTracking[]
+            {
+                    new TimeTracking
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Александрова").Id,
+                        TableNum = 1,
+                        EntryDate = "01.05.2022",
+                        CurrentDate = DateTime.Now,
+                        HoursWorked = 800,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new TimeTracking
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Смирнов").Id,
+                        TableNum = 2,
+                        EntryDate = "01.03.2022",
+                        CurrentDate = DateTime.Now,
+                        HoursWorked = 1000,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
 
-        //            new TimeTracking
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Петрова").Id,
-        //                TableNum = 3,
-        //                EntryDate = "01.01.2022",
-        //                CurrentDate = DateTime.Now,
-        //                HoursWorked = 1200,
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new TimeTracking
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Козлов").Id,
-        //                TableNum = 4,
-        //                EntryDate = "01.01.2023",
-        //                CurrentDate = DateTime.Now,
-        //                HoursWorked = 300,
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
+                    new TimeTracking
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Петрова").Id,
+                        TableNum = 3,
+                        EntryDate = "01.01.2022",
+                        CurrentDate = DateTime.Now,
+                        HoursWorked = 1200,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new TimeTracking
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Козлов").Id,
+                        TableNum = 4,
+                        EntryDate = "01.01.2023",
+                        CurrentDate = DateTime.Now,
+                        HoursWorked = 300,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
 
-        //            new TimeTracking
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Сергеев").Id,
-        //                TableNum = 5,
-        //                EntryDate = "01.12.2022",
-        //                CurrentDate = DateTime.Now,
-        //                HoursWorked = 400,
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new TimeTracking
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Михайлова").Id,
-        //                TableNum = 6,
-        //                EntryDate = "01.11.2022",
-        //                CurrentDate = DateTime.Now,
-        //                HoursWorked = 500,
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new TimeTracking
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Николаев").Id,
-        //                TableNum = 7,
-        //                EntryDate = "01.01.2020",
-        //                CurrentDate = DateTime.Now,
-        //                HoursWorked = 1500,
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new TimeTracking
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Лебедева").Id,
-        //                TableNum = 8,
-        //                EntryDate = "01.01.2020",
-        //                CurrentDate = DateTime.Now,
-        //                HoursWorked = 1500,
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new TimeTracking
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Григорьев").Id,
-        //                TableNum = 9,
-        //                EntryDate = "01.12.2019",
-        //                CurrentDate = DateTime.Now,
-        //                HoursWorked = 1700,
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
+                    new TimeTracking
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Сергеев").Id,
+                        TableNum = 5,
+                        EntryDate = "01.12.2022",
+                        CurrentDate = DateTime.Now,
+                        HoursWorked = 400,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new TimeTracking
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Михайлова").Id,
+                        TableNum = 6,
+                        EntryDate = "01.11.2022",
+                        CurrentDate = DateTime.Now,
+                        HoursWorked = 500,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new TimeTracking
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Николаев").Id,
+                        TableNum = 7,
+                        EntryDate = "01.01.2020",
+                        CurrentDate = DateTime.Now,
+                        HoursWorked = 1500,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new TimeTracking
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Лебедева").Id,
+                        TableNum = 8,
+                        EntryDate = "01.01.2020",
+                        CurrentDate = DateTime.Now,
+                        HoursWorked = 1500,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new TimeTracking
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Григорьев").Id,
+                        TableNum = 9,
+                        EntryDate = "01.12.2019",
+                        CurrentDate = DateTime.Now,
+                        HoursWorked = 1700,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
 
 
-        //    };
-        //    _context.TimeTrackings.AddRange(items);
-        //    _context.SaveChanges();
+            };
+            _context.TimeTrackings.AddRange(items);
+            _context.SaveChanges();
 
-        //}
-        //if (!_context.Tripss.Any())
-        //{
-        //    var ps = _context.Tripss.ToList();
-        //    var items = new Trips[]
-        //    {
-        //            new Trips
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Александрова").Id,
-        //                VisitDate = "26.03.2023",
-        //                RepairType = "Поломка трубопровода",
-        //                Result = n,
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
-        //            new Trips
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                EmployeeId = ps.Find(p => p.LastName == "Александрова").Id,
-        //                VisitDate = "26.03.2023",
-        //                RepairType = "Поломка трубопровода",
-        //                Result = n,
-        //                CreatedBy = str_ini_by,
-        //                CreatedDate = DateTime.Now,
-        //                UpdatedBy = str_ini_by,
-        //                UpdatedDate = DateTime.Now
-        //            },
+        }
+        if (!_context.Tripss.Any())
+        {
+            var emps = _context.Employees.ToList();
+            var items = new Trips[]
+            {
+                    new Trips
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Александрова").Id,
+                        VisitDate = "26.03.2023",
+                        RepairType = "Поломка трубопровода",
+                        Result = false,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Trips
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Александрова").Id,
+                        VisitDate = "26.03.2023",
+                        RepairType = "Поломка трубопровода",
+                        Result = false,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
                     
-        //             //ЗАПОЛНИТЬ
+                     //ЗАПОЛНИТЬ
 
-        //    };
-        //    _context.Tripss.AddRange(items);
-        //    _context.SaveChanges();
-        //}
+            };
+            _context.Tripss.AddRange(items);
+            _context.SaveChanges();
+        }
     }
 
 }

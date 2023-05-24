@@ -13,21 +13,22 @@ namespace HeatingCompanySystem.Datebase.Models
     {
         [Column("table_num", Order = 1)]
         public int TableNum { get; set; }
-        [Column("last_name", Order = 2)]
-        public string LastName { get; set; }
+        
+        //[Column("last_name", Order = 2)]
+        //public string LastName { get; set; }
 
 
-        [Column("employee_id", Order = 3)]
+        [Column("employee_id", Order = 2)]
         public Guid EmployeeId { get; set; }
         public Employee Employee { get; set; }
 
-        [Column("entry_date", Order = 4)]
+        [Column("entry_date", Order = 3)]
         public string EntryDate { get; set; }
 
-        [Column("current_date", Order = 5)]
+        [Column("current_date", Order = 4)]
         public DateTime CurrentDate { get; set; }
 
-        [Column("hours_worked", Order = 6)]
+        [Column("hours_worked", Order = 5)]
         public int HoursWorked { get; set; }
     }
 }
