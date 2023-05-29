@@ -11,7 +11,6 @@ namespace HeatingCompanySystem.Datebase;
 public class MyContextDb : DbContext
 {
 
-    public DbSet<Brigade> Brigades { get; set; }
 
     public DbSet<Timatabel> Timatabels { get; set; }
 
