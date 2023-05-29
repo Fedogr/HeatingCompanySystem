@@ -13,7 +13,7 @@ namespace HeatingCompanySystem.Controlers
     public class EmployeeController
     {
         SettingsDatabase settingsDb = new SettingsDatabase();
-        public List<Employee> GetEmployees(string search = "", string field = "")
+        public List<Employee> GetAllEmployees(string search = "", string field = "")
         {
             List<Employee> employees = null;
 

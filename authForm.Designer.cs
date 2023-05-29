@@ -73,7 +73,7 @@
             this.Controls.Add(this.loginBox);
             this.Controls.Add(this.loginBtn);
             this.Name = "authForm";
-            this.Text = "authForm";
+            this.Text = "Авторизация";
             this.ResumeLayout(false);
             this.PerformLayout();
 

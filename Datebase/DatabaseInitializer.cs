@@ -566,7 +566,6 @@ public class DatabaseInitializer
                         UpdatedBy = str_ini_by,
                         UpdatedDate = DateTime.Now
                     },
-
                     new TimeTracking
                     {
                         Id = Guid.NewGuid(),
@@ -593,7 +592,6 @@ public class DatabaseInitializer
                         UpdatedBy = str_ini_by,
                         UpdatedDate = DateTime.Now
                     },
-
                     new TimeTracking
                     {
                         Id = Guid.NewGuid(),
@@ -677,6 +675,42 @@ public class DatabaseInitializer
                         EmployeeId = emps.Find(p => p.LastName == "Александрова").Id,
                         VisitDate = "26.03.2023",
                         RepairType = "Поломка трубопровода",
+                        Result = true,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Trips
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Смирнов").Id,
+                        VisitDate = "26.03.2023",
+                        RepairType = "Поломка трубопровода",
+                        Result = true,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Trips
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Петрова").Id,
+                        VisitDate = "26.03.2023",
+                        RepairType = "Поломка трубопровода",
+                        Result = true,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Trips
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Козлов").Id,
+                        VisitDate = "01.03.2023",
+                        RepairType = "Аварийное отключение электричества",
                         Result = false,
                         CreatedBy = str_ini_by,
                         CreatedDate = DateTime.Now,
@@ -686,17 +720,63 @@ public class DatabaseInitializer
                     new Trips
                     {
                         Id = Guid.NewGuid(),
-                        EmployeeId = emps.Find(p => p.LastName == "Александрова").Id,
-                        VisitDate = "26.03.2023",
-                        RepairType = "Поломка трубопровода",
+                        EmployeeId = emps.Find(p => p.LastName == "Сергеев").Id,
+                        VisitDate = "01.03.2023",
+                        RepairType = "Аварийное отключение электричества",
                         Result = false,
                         CreatedBy = str_ini_by,
                         CreatedDate = DateTime.Now,
                         UpdatedBy = str_ini_by,
                         UpdatedDate = DateTime.Now
                     },
-                    
-                     //ЗАПОЛНИТЬ
+                    new Trips
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Михайлова").Id,
+                        VisitDate = "01.03.2023",
+                        RepairType = "Аварийное отключение электричества",
+                        Result = false,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Trips
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Николаев").Id,
+                        VisitDate = "17.03.2023",
+                        RepairType = "Пожар в производственном отсеке",
+                        Result = true,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Trips
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Лебедева").Id,
+                        VisitDate = "17.03.2023",
+                        RepairType = "Пожар в производственном отсеке",
+                        Result = true,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
+                    new Trips
+                    {
+                        Id = Guid.NewGuid(),
+                        EmployeeId = emps.Find(p => p.LastName == "Григорьев").Id,
+                        VisitDate = "17.03.2023",
+                        RepairType = "Пожар в производственном отсеке",
+                        Result = true,
+                        CreatedBy = str_ini_by,
+                        CreatedDate = DateTime.Now,
+                        UpdatedBy = str_ini_by,
+                        UpdatedDate = DateTime.Now
+                    },
 
             };
             _context.Tripss.AddRange(items);

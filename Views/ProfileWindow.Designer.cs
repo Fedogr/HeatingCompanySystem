@@ -72,11 +72,11 @@
             // 
             // updatedDateBox
             // 
-            this.updatedDateBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.updatedDateBox.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.updatedDateBox.Location = new System.Drawing.Point(628, 207);
             this.updatedDateBox.Name = "updatedDateBox";
             this.updatedDateBox.ReadOnly = true;
-            this.updatedDateBox.Size = new System.Drawing.Size(157, 34);
+            this.updatedDateBox.Size = new System.Drawing.Size(157, 30);
             this.updatedDateBox.TabIndex = 15;
             // 
             // label7
@@ -91,11 +91,11 @@
             // 
             // updatedByBox
             // 
-            this.updatedByBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.updatedByBox.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.updatedByBox.Location = new System.Drawing.Point(202, 207);
             this.updatedByBox.Name = "updatedByBox";
             this.updatedByBox.ReadOnly = true;
-            this.updatedByBox.Size = new System.Drawing.Size(157, 34);
+            this.updatedByBox.Size = new System.Drawing.Size(157, 30);
             this.updatedByBox.TabIndex = 16;
             // 
             // label6
@@ -110,11 +110,11 @@
             // 
             // createdDateBox
             // 
-            this.createdDateBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.createdDateBox.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.createdDateBox.Location = new System.Drawing.Point(628, 136);
             this.createdDateBox.Name = "createdDateBox";
             this.createdDateBox.ReadOnly = true;
-            this.createdDateBox.Size = new System.Drawing.Size(157, 34);
+            this.createdDateBox.Size = new System.Drawing.Size(157, 30);
             this.createdDateBox.TabIndex = 17;
             // 
             // label5
@@ -129,11 +129,11 @@
             // 
             // createdByBox
             // 
-            this.createdByBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.createdByBox.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.createdByBox.Location = new System.Drawing.Point(202, 141);
             this.createdByBox.Name = "createdByBox";
             this.createdByBox.ReadOnly = true;
-            this.createdByBox.Size = new System.Drawing.Size(157, 34);
+            this.createdByBox.Size = new System.Drawing.Size(157, 30);
             this.createdByBox.TabIndex = 18;
             // 
             // label4
@@ -148,11 +148,11 @@
             // 
             // roleBox
             // 
-            this.roleBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.roleBox.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.roleBox.Location = new System.Drawing.Point(202, 74);
             this.roleBox.Name = "roleBox";
             this.roleBox.ReadOnly = true;
-            this.roleBox.Size = new System.Drawing.Size(583, 34);
+            this.roleBox.Size = new System.Drawing.Size(583, 30);
             this.roleBox.TabIndex = 19;
             // 
             // label3
@@ -167,10 +167,10 @@
             // 
             // passBox
             // 
-            this.passBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.passBox.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.passBox.Location = new System.Drawing.Point(628, 14);
             this.passBox.Name = "passBox";
-            this.passBox.Size = new System.Drawing.Size(157, 34);
+            this.passBox.Size = new System.Drawing.Size(157, 30);
             this.passBox.TabIndex = 13;
             this.passBox.TextChanged += new System.EventHandler(this.passBox_TextChanged);
             // 
@@ -186,11 +186,11 @@
             // 
             // loginBox
             // 
-            this.loginBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.loginBox.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.loginBox.Location = new System.Drawing.Point(202, 16);
             this.loginBox.Name = "loginBox";
             this.loginBox.ReadOnly = true;
-            this.loginBox.Size = new System.Drawing.Size(157, 34);
+            this.loginBox.Size = new System.Drawing.Size(157, 30);
             this.loginBox.TabIndex = 20;
             // 
             // label1
@@ -226,7 +226,7 @@
             this.Controls.Add(this.loginBox);
             this.Controls.Add(this.label1);
             this.Name = "ProfileWindow";
-            this.Text = "Profile";
+            this.Text = "Сводка профиля";
             this.Load += new System.EventHandler(this.ProfileWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

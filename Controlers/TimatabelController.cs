@@ -162,5 +162,71 @@ namespace HeatingCompanySystem.Controlers
 
             return isAdd;
         }
+
+        public Timatabel GetSingleTimatabel(Guid _id)
+        {
+            Timatabel ps = null;
+
+            try
+            {
+                using (MyContextDb db = new MyContextDb(settingsDb.GetDbContextOptions()))
+                {
+                    ps = db.Timatabels.Single(p => p.Id == _id);
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+            return ps;
+        }
+        public List<Timatabel> GetAllTimatabels(string search = "", string field = "")
+        {
+            List<Timatabel> list = null;
+
+            try
+            {
+                using (MyContextDb db = new MyContextDb(settingsDb.GetDbContextOptions()))
+                {
+                    if (search == "")
+                    {
+                        list = db.Timatabels.OrderBy(ps => ps.TimetableType).ToList();
+                    }
+                    else
+                    {
+                        var listLocal = db.Timatabels.OrderBy(ps => ps.TimetableType).ToList();
+                        switch (field)
+                        {
+                            case "common":
+                                list = listLocal
+                                    .Where(
+                                        ps => ps.TimetableType.ToString().Contains(search.ToLower())
+                                        || ps.CreatedBy.ToLower().Contains(search.ToLower())
+                                        || ps.UpdatedBy.ToLower().Contains(search.ToLower())
+                                    ).OrderBy(ps => ps.TimetableType).ToList();
+                                break;
+
+                            case "numPStation":
+                                list = listLocal
+                                    .Where(
+                                        ps => ps.TimetableType.ToString().Contains(search.ToLower())
+                                    ).OrderBy(ps => ps.TimetableType).ToList();
+                                break;
+
+                            default:
+                                list = db.Timatabels.OrderBy(ps => ps.TimetableType).ToList();
+                                break;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+            return list;
+        }
     }
 }

@@ -60,13 +60,13 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LightGray;
             this.groupBox1.Controls.Add(this.typeDataGV);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(0, 139);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1317, 300);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Список";
+            this.groupBox1.Text = "Список графиков работы";
             // 
             // typeDataGV
             // 
@@ -84,12 +84,12 @@
             this.changeBtnCol,
             this.deleteBtnCol});
             this.typeDataGV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.typeDataGV.Location = new System.Drawing.Point(3, 30);
+            this.typeDataGV.Location = new System.Drawing.Point(3, 26);
             this.typeDataGV.Name = "typeDataGV";
             this.typeDataGV.RowHeadersWidth = 51;
             this.typeDataGV.RowTemplate.Height = 29;
             this.typeDataGV.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.typeDataGV.Size = new System.Drawing.Size(1311, 267);
+            this.typeDataGV.Size = new System.Drawing.Size(1311, 271);
             this.typeDataGV.TabIndex = 0;
             this.typeDataGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.typeDataGV_CellContentClick);
             // 
@@ -281,7 +281,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Name = "TimatabelWindow";
-            this.Text = "TimatabelWindow";
+            this.Text = "Графики рабочего дня";
             this.Load += new System.EventHandler(this.TimatabelWindow_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.typeDataGV)).EndInit();
