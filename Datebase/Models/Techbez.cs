@@ -16,9 +16,6 @@ namespace HeatingCompanySystem.Datebase.Models
         public Guid EmployeeId { get; set; }
         public Employee Employee { get; set; }
 
-        //[Column("last_name", Order = 2)]
-        //public string LastName { get; set; }
-
         [Column("check_date", Order = 2)]
         public string CheckDate { get; set; }
 
