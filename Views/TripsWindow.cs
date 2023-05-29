@@ -30,7 +30,7 @@ namespace HeatingCompanySystem.Views
             empCtrl = new EmployeeController();
             InitializeComponent();
         }
-        private void UpdateForm()
+        private void UpdateForm(string search = "", string field = "")
         {
             mainItems = tripCtrl.GetAllTrips();
             if (mainItems != null)

@@ -62,7 +62,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(968, 377);
+            this.groupBox1.Size = new System.Drawing.Size(960, 377);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Список";
@@ -88,7 +88,7 @@
             this.dataMatLiabGV.Name = "dataMatLiabGV";
             this.dataMatLiabGV.RowHeadersWidth = 51;
             this.dataMatLiabGV.RowTemplate.Height = 29;
-            this.dataMatLiabGV.Size = new System.Drawing.Size(962, 348);
+            this.dataMatLiabGV.Size = new System.Drawing.Size(954, 348);
             this.dataMatLiabGV.TabIndex = 0;
             this.dataMatLiabGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataMatLiabGV_CellContentClick);
             // 
@@ -190,7 +190,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Georgia", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.Location = new System.Drawing.Point(0, 377);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(968, 142);
+            this.groupBox2.Size = new System.Drawing.Size(960, 142);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Добавить нарушение:";
@@ -244,9 +244,9 @@
             this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(267, 36);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(174, 24);
+            this.label2.Size = new System.Drawing.Size(167, 24);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Выбрать причину";
+            this.label2.Text = "Указать причину";
             // 
             // label1
             // 
@@ -262,7 +262,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 519);
+            this.ClientSize = new System.Drawing.Size(960, 519);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "ViolationsWindow";
