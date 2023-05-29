@@ -171,7 +171,16 @@ namespace HeatingCompanySystem
 
         private void exportToWordBtn_Click(object sender, EventArgs e)
         {
-           
+            using(WordService wordService = new WordService())
+            {
+                if(wordService.CreateDocEquipmentByEmployee())
+                {
+                    MessageBox.Show("Success!");
+                } else
+                {
+                    MessageBox.Show("Error!");
+                }
+            }
         }
     }
 }
